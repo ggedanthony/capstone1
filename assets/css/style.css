@@ -1,0 +1,39 @@
+html{
+	scroll-behavior: smooth;
+
+}
+.homepic{
+	height: 90vh;
+	object-fit: cover !important;
+	background-size: cover;
+}
+
+.carlogo{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border: 1px solid white;
+	border-radius: 20px;
+	object-fit: cover !important;
+
+
+}
+.logoholder{
+	height: 200px;
+}
+
+.about{
+	background: gray;
+}
+
+
+
+
+/*aston page*/
+.astonhome
+{
+	height: 100vh;
+	object-fit: cover;
+	object-fit: cover !important;
+
+}
