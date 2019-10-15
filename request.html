@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Request Car</title>
+	<link rel=" shortcut icon" type="image/png" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Logo</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About Us</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Models
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="aston.html">Aston Martin</a>
+          <a class="dropdown-item" href="bentley.html">Bentley</a>
+          <a class="dropdown-item" href="bmw.html">BMW</a>
+          <a class="dropdown-item" href="bugatti.html">Bugatti</a>
+          <a class="dropdown-item" href="ferrari.html">Ferrari</a>
+          <a class="dropdown-item" href="lambo.html">Lamborghini</a>
+          <a class="dropdown-item" href="maserati.html">Maserati</a>
+          <a class="dropdown-item" href="mercedes.html">Mercedes</a>
+          <a class="dropdown-item" href="mustang.html">Mustang</a>
+          <a class="dropdown-item" href="porsche.html">Porsche</a>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+
+
+<section class="container">
+  <h2 class="d-flex justify-content-center align-items-center">Vehicle Request</h2>
+  <form>
+		<fieldset class="fieldset-auto-width request">
+		<div class="titlerequest"><h4>Vehicle Details</h4></div>
+		<div class="row mb-3">	
+		<div class="col-md-6">
+			<h6>Make:</h6>
+		<select class="form-control">
+  		<option>--All--</option>
+		</select>
+		</div>
+		<div class="col-md-6">
+			<h6>Model:</h6>
+		<select class="form-control">
+  		<option>--All--</option>
+		</select>
+		</div>
+		</div>
+		
+			
+			<div class="row mb-3">
+				<div class="col-md-6">
+				<label for="formControlRange">First Registration</label>
+	    		<input type="range" class="form-control-range" id="formControlRange">
+				</div>
+				<div class="col-md-6">
+				<label for="formControlRange">Mileage:</label>
+	    		<input type="range" class="form-control-range" id="formControlRange">
+				</div>
+
+			</div>
+
+			<div class="row mb-3">
+				<div class="col-md-6">
+				<label for="formControlRange">Engine Size:</label>
+	    		<input type="range" class="form-control-range" id="formControlRange">
+				</div>
+				<div class="col-md-6">
+				<label for="formControlRange">Power:</label>
+	    		<input type="range" class="form-control-range" id="formControlRange">
+				</div>
+			</div>
+
+			<div class="row mb-3">
+				<div class="col-md-6">
+				<label for="formControlRange">Fuel:</label>
+	    		<input type="fuel" class="form-control" id="exampleInputFuel" aria-describedby="fuelHelp" placeholder="Enter Fuel">
+				</div>
+				<div class="col-md-6">
+				<label for="formControlRange">Gearbox:</label>
+	    		<input type="email" class="form-control" id="exampleInputGearbox" aria-describedby="gearboxHelp" placeholder="Enter Gearbox">
+				</div>
+			</div>
+			
+			 <div class="form-group">
+   			 <label for="exampleFormControlTextarea1">Other Details:</label>
+    		 <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+		     </div>
+	</fieldset>
+</form>
+
+<form action="" class="my-5">
+	<div class="row">
+	<fieldset class="fieldset-auto-width request col-md-5 ml-3 mr-5">
+
+	<div class="titlerequest"><h4>Contact Information</h4></div>
+		
+		<label for="formControlRange">Name:</label><br>
+  		<input type="name" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter Name">
+		<label for="formControlRange">Email:</label><br>
+  		<input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email">
+  		<label for="formControlRange">Phone:</label><br>
+  		<input type="phone" class="form-control" id="exampleInputPhone" aria-describedby="phoneHelp" placeholder="Enter Phone Number">
+	
+
+	</fieldset>
+	<fieldset class="fieldset-auto-width request col-md-5 ml-5 mr-0">
+
+		<div class="titlerequest"><h4>Payment Preference</h4></div>
+		<label for="formControlRange" class="tradein">Trade In:</label>
+		<input type="radio" name="yes" value="Yes">Yes
+		<input type="radio" name="no" value="No">No
+		<br>
+		<label for="formControlRange" class="mr-5">Financial Requested:</label>
+		<input type="radio" name="yes" value="Yes">Yes
+		<input type="radio" name="no" value="No">No
+		<br>
+  		<label for="formControlRange">Budget:</label><br>
+  		<input type="phone" class="form-control" id="exampleInputPhone" aria-describedby="phoneHelp" placeholder="Enter Budget">
+	</fieldset>
+	</div>
+	<button type="button" class="btn btn-primary btn-lg btn-block my-3">Request</button>
+</form>
+
+
+
+
+</section>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
+</body>
+</html>

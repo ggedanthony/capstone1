@@ -3,37 +3,160 @@ html{
 
 }
 .homepic{
-	height: 90vh;
+	height: 100vh;
 	object-fit: cover !important;
 	background-size: cover;
+	margin: 0;
 }
 
-.carlogo{
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-	border: 1px solid white;
-	border-radius: 20px;
-	object-fit: cover !important;
 
 
-}
-.logoholder{
-	height: 200px;
-}
 
 .about{
 	background: gray;
 }
 
-
+.carselect{
+	height: 300px;
+	width: 100px;
+	object-fit: cover !important;
+	/*object-fit: cover;*/
+}
 
 
 /*aston page*/
 .astonhome
 {
 	height: 100vh;
-	object-fit: cover;
 	object-fit: cover !important;
 
 }
+
+.cars{
+	background: lightgray;
+}
+
+
+.titlerequest{
+	margin: 0;
+}
+
+.request{
+	border: 1px solid lightgray;
+	padding: 10px;
+	border-radius: 5px;
+}
+.tradein{
+	margin-right: 100px;
+}
+
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #C8C8C8;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.overlaycontain:hover .overlay {
+  height: 100%;
+}
+.overlaycontain {
+  position: relative;
+  width: 100%;
+}
+
+.overlaytext {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.homepic { 
+  /* The image used */
+  background-image: url("../images/header.jpg");
+
+  /* Full height */
+  height: 100vh; 
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+<section class="container-fluid my-2">
+  <div class="row">
+    <div>
+      <div data-aos="fade-up">
+      <h2 class="d-flex justify-content-center align-items-center">Choose Your Brand</h2></div> 
+      <div class="my-5 logoholder" data-aos="fade-up">
+     <a href="aston.html"> <img src="assets/images/astonmartinlogo.png" alt="" class="carlogo col-md-4"> </a>
+     <a href="bentley.html"> <img src="assets/images/bentleylogo.png" alt="" class="carlogo col-md-3"> </a>
+     <a href="bugatti.html"> <img src="assets/images/bugattilogo.jpg" alt="" class="carlogo col-md-2"> </a>
+     <a href="ferrari.html"> <img src="assets/images/Ferrarilogo.png" alt="" class="carlogo col-md-2"> </a>
+     </div>
+      
+     <div class="logoholder" data-aos="fade-up">
+     <a href="lambo.html"> <img src="assets/images/lamborghinilogo.jpg" alt="" class="carlogo col-md-2"> </a>
+     <a href="maserati.html"> <img src="assets/images/maseratilogo.jpg" alt="" class="carlogo col-md-2"> </a>
+      <a href="mercedes.html"> <img src="assets/images/mercedeslogo.jpg" alt="" class="carlogo col-md-2"> </a>
+     <a href="bmw.html"> <img src="assets/images/BMW-logo.png" alt="" class="carlogo col-md-2"> </a>
+      <a href="porsche.html"> <img src="assets/images/porschelogo.jpg" alt="" class="carlogo col-md-3"> </a>
+     </div>
+     <div class="align-items-center justify-content-center" data-aos="fade-up">
+     <a href="mustang.html"> <img src="assets/images/mustanglogo.JPG" alt="" class="carlogo col-md-3"> </a>
+     </div>
+    
+
+    </div>
+    </div>
+  </div>
+</section>*/
