@@ -1,19 +1,11 @@
 html{
 	scroll-behavior: smooth;
-
 }
 .homepic{
 	height: 100vh;
 	object-fit: cover !important;
 	background-size: cover;
 	margin: 0;
-}
-
-
-
-
-.about{
-	background: gray;
 }
 
 .carselect{
@@ -23,17 +15,15 @@ html{
 	/*object-fit: cover;*/
 }
 
-
-/*aston page*/
-.astonhome
-{
-	height: 100vh;
-	object-fit: cover !important;
+.logopic{
+	height: 30px;
+	width: 30px;
 
 }
 
 .cars{
-	background: lightgray;
+	background: #D6DBDF
+	;
 }
 
 
@@ -42,15 +32,14 @@ html{
 }
 
 .request{
-	border: 1px solid lightgray;
+	border: 1px solid #D6DBDF
+	;
 	padding: 10px;
 	border-radius: 5px;
 }
 .tradein{
 	margin-right: 100px;
 }
-
-
 
 .overlay {
   position: absolute;
@@ -100,22 +89,71 @@ html{
 }
 
 
+.teampic{
+	height: 200px;
+	/*object-fit: cover !important;*/
+	background-size: cover;
+}
+
+.vl {
+  border-left: 3px solid black;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+
+.words{
+	text-align: justify;
+}
 
 
 
 
+/*flickity trial*/
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: white;
+  /*background: #EEE;*/
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 100%;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+}
+ 
+ .gallery-cell {
+    width: 100%;
+    height: 200px;
+    padding: 40px;
+    /*overflow-y: auto;*/
+    // Flexbox Settings
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+  }
 
 
 
+/*flickity trial*/
 
-
-
-
-
-
-
-
-
+.carreq{
+	background: #D6DBDF
+	;
+}
 
 
 

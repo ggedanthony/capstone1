@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Car Rental</title>
+	<title>Auto Haste</title>
 	<link rel=" shortcut icon" type="image/png" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Flickity -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <!-- flickity -->
 </head>
 <body>
   <!-- start of navbar -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-gradient-warning fixed-top">
-  <a class="navbar-brand" href="#">Logo</a>
+  <a class="navbar-brand" href="#"><img src="assets/images/logo.jpg" alt="" class="logopic"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -26,6 +29,12 @@
         <a class="nav-link" href="#about">About Us</a>
       </li>
         <li class="nav-item">
+        <a class="nav-link" href="#features" tabindex="-1" aria-disabled="true">Featured Cars</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#testimony" tabindex="-1" aria-disabled="true">Testimony</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
       </li>
       <li class="nav-item dropdown">
@@ -50,21 +59,86 @@
 </nav>
 <!-- end of nav bar -->
 <!-- start of carousel -->
-<!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-        <img src="assets/images/header.jpg" class="d-block w-100 homepic" alt="...">
-    </div>
-  </div>
-</div>-->
 
-<div class="headcontainer homepic d-flex justify-content-center align-items-center">
-  <div class="centered"><strong>Statement</strong></div>
+
+<div class="headcontainer homepic d-flex justify-content-center align-items-center text-white">
+  <div class="centered">
+    <h1 class="justify-content-center d-flex font-weight-bolder">FIND YOUR NEW CAR</h1>
+    <h3 class="mb-5 font-weight-bolder">Browse our stock and find the car of your dreams!</h3>
+    <form class="my-5">
+    <div class="row">  
+    <div class="col-md-4">
+      <h6 class="font-weight-bolder">Make:</h6>
+    <select class="form-control">
+      <option>--All--</option>
+    </select>
+    </div>
+    <div class="col-md-4">
+      <h6 class="font-weight-bolder">Model:</h6>
+    <select class="form-control">
+      <option>--All--</option>
+    </select>
+    </div>
+    <div class="col-md-4">
+     <label for="formControlRange" class="font-weight-bolder">Price:</label>
+      <input type="range" class="form-control-range" id="formControlRange">
+    </div>
+    </div>
+</form>
+  </div>
 </div>
  <!-- end of carousel -->
 
+<!-- start of about us section -->
+
+<section id="about">
+  <br>
+  <div class="vl col-md-6 off-set-6"></div><br>
+<h2 class="d-flex justify-content-center align-items-center">About Team</h2>
+<div class="container-fluid">
+<div class="row justify-content-center"> 
+  <div class="card col-md-3 mx-3 px-0">
+    <img src="assets/images/team.png" class="card-img-top teampic" alt="...">
+    <div class="card-body">
+    <h5 class="card-title">CEO & Founder</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p>ceo@autohaste.com</p>
+    <a href="#" class="btn btn-primary">Contact</a>
+    </div>
+  </div>
+   <div class="card col-md-3 mx-3 px-0">
+    <img src="assets/images/team.png" class="card-img-top teampic" alt="...">
+    <div class="card-body">
+    <h5 class="card-title">Chief Operating Officer</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p>coo@autohaste.com</p>
+    <a href="#" class="btn btn-primary">Contact</a>
+    </div>
+  </div>
+   <div class="card col-md-3 mx-3 px-0">
+    <img src="assets/images/team.png" class="card-img-top teampic" alt="...">
+    <div class="card-body">
+    <h5 class="card-title">General Manager</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <p>manager@autohaste.com</p>
+    <a href="#" class="btn btn-primary">Contact</a>
+    </div>
+  </div>
+</div>
+</div>
+ <br>
+  <div class="vl col-md-6 off-set-6"></div><br>
+<h2 class="d-flex justify-content-center align-items-center">About Us</h2>
+    <div class="col-md-6 offset-md-3 d-flex justify-content-center words mt-3">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, rem sunt praesentium cum, obcaecati dolores voluptatum laborum! Et iste eius iure perferendis qui, laboriosam dicta cum odit assumenda eos, recusandae!</p>
+    </div>
+</section>
+<!-- end of about us section -->
+
 <!-- start of car brand selection -->
-<section class="container-fluid cars">
+<section class="container-fluid cars" id="features">
+   <br>
+  <div class="vl col-md-6 off-set-6"></div><br>
   <div>
     <h2 class="d-flex justify-content-center">Featured Cars</h2>
   </div>
@@ -180,28 +254,82 @@
   </div>
   </div>
   </div>
-
-
-
-
-
+  <br>
 </section>
-
-
-
 
 <!-- end of car brand selection -->
-<!-- start of about us section -->
 
-<section id="about">
-  <div class="about"><h2 class="d-flex justify-content-center align-items-center">About Us</h2>
-  <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ratione aspernatur accusamus nulla nostrum ea odio eos, reprehenderit, fuga blanditiis velit itaque odit, distinctio voluptatum consequuntur explicabo quis inventore deserunt!</h3>
+<!-- start of testimonials -->
+<section class="container-fluid" id="testimony">
+  <br>
+  <div class="vl col-md-6 off-set-6"></div><br>
+  <div>
+    <h2 class="d-flex justify-content-center">Testimonials</h2>
+    <div class="col-md-6 offset-md-3 d-flex justify-content-center words mt-3">
+    <p>Words of Testimony</p>
+    </div>
+  </div>
+
+
+<div class="carousel"
+  data-flickity='{ "freeScroll": true }'>
+  <div class="gallery-cell d-flex justify-content-center">
+    <q class="mb-5">This is my Testimony</q>
+    <i class="">Ged Anthony Gonzales</i>
+  </div>
+    <div class="gallery-cell d-flex justify-content-center">
+    <q class="mb-5">This is my Testimony</q>
+    <i class="">Ged Anthony Gonzales</i>
+  </div>
+    <div class="gallery-cell d-flex justify-content-center">
+    <q class="mb-5">This is my Testimony</q>
+    <i class="">Ged Anthony Gonzales</i>
+  </div>
+    <div class="gallery-cell d-flex justify-content-center">
+    <q class="mb-5">This is my Testimony</q>
+    <i class="">Ged Anthony Gonzales</i>
+  </div>
+    <div class="gallery-cell d-flex justify-content-center">
+    <q class="mb-5">This is my Testimony</q>
+    <i class="">Ged Anthony Gonzales</i>
+  </div>
+
 </div>
 </section>
-<!-- end of about us section -->
+
+<!-- end of testimonials -->
+
+<br><br>
+
+
+<!-- start of request a car -->
+
+<section class="carreq" id="request">
+  <br><div class="vl col-md-6"></div><br>
+  <div class="centered">
+   <h3 class="justify-content-center d-flex ">LOOKING FOR A CAR</h3>
+   <small class="justify-content-center d-flex">Browse our stock and find the car of your dreams!</small>
+  </div>
+  <div class="d-flex justify-content-center align-items-center">
+  <a href="request.html"><button type="button" class="btn btn-primary btn-lg my-4">REQUEST</button></a> 
+
+  </div>
+
+
+</section>
+
+
+
+<!-- end of request a car -->
+
+
+
+
+
 <!-- start of contact us section -->
 
 <section id="contact">
+  <br><div class="vl col-md-6"></div><br>
   <h2 class="d-flex justify-content-center align-items-center">Contact Us</h2>
   <form>
   <div class="form-group col-md-12 d-flex">
@@ -228,5 +356,10 @@
   <script>
   AOS.init();
 </script>
+
+<!-- flickity -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!-- flickity -->
+
 </body>
 </html>
