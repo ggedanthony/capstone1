@@ -22,7 +22,7 @@ html{
 }
 
 .cars{
-	background: #D6DBDF
+	background: #D6DBDF;
 	;
 }
 
@@ -32,7 +32,7 @@ html{
 }
 
 .request{
-	border: 1px solid #D6DBDF
+	border: 1px solid #D6DBDF;
 	;
 	padding: 10px;
 	border-radius: 5px;
@@ -96,12 +96,18 @@ html{
 }
 
 .vl {
-  border-left: 3px solid black;
+  /*border-left: 3px solid black;
   height: 30px;
   position: absolute;
   left: 50%;
   margin-left: -3px;
-  top: 0;
+  top: 0;*/
+  font-size: 35px;
+}
+
+.vl:before {
+	content: " ";
+	border-left: 3px solid black;
 }
 
 .words{
@@ -151,50 +157,15 @@ body { font-family: sans-serif; }
 /*flickity trial*/
 
 .carreq{
-	background: #D6DBDF
-	;
+	background: #D6DBDF;
 }
 
 
 
+.foot{
+
+background: grey;
+}
 
 
 
-
-
-
-
-
-
-
-
-/*
-
-<section class="container-fluid my-2">
-  <div class="row">
-    <div>
-      <div data-aos="fade-up">
-      <h2 class="d-flex justify-content-center align-items-center">Choose Your Brand</h2></div> 
-      <div class="my-5 logoholder" data-aos="fade-up">
-     <a href="aston.html"> <img src="assets/images/astonmartinlogo.png" alt="" class="carlogo col-md-4"> </a>
-     <a href="bentley.html"> <img src="assets/images/bentleylogo.png" alt="" class="carlogo col-md-3"> </a>
-     <a href="bugatti.html"> <img src="assets/images/bugattilogo.jpg" alt="" class="carlogo col-md-2"> </a>
-     <a href="ferrari.html"> <img src="assets/images/Ferrarilogo.png" alt="" class="carlogo col-md-2"> </a>
-     </div>
-      
-     <div class="logoholder" data-aos="fade-up">
-     <a href="lambo.html"> <img src="assets/images/lamborghinilogo.jpg" alt="" class="carlogo col-md-2"> </a>
-     <a href="maserati.html"> <img src="assets/images/maseratilogo.jpg" alt="" class="carlogo col-md-2"> </a>
-      <a href="mercedes.html"> <img src="assets/images/mercedeslogo.jpg" alt="" class="carlogo col-md-2"> </a>
-     <a href="bmw.html"> <img src="assets/images/BMW-logo.png" alt="" class="carlogo col-md-2"> </a>
-      <a href="porsche.html"> <img src="assets/images/porschelogo.jpg" alt="" class="carlogo col-md-3"> </a>
-     </div>
-     <div class="align-items-center justify-content-center" data-aos="fade-up">
-     <a href="mustang.html"> <img src="assets/images/mustanglogo.JPG" alt="" class="carlogo col-md-3"> </a>
-     </div>
-    
-
-    </div>
-    </div>
-  </div>
-</section>*/

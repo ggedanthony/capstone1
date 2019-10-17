@@ -8,10 +8,12 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Logo</a>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-gradient-warning fixed-top">
+  <a class="navbar-brand" href="index.html"><img src="assets/images/logo.jpg" alt="" class="logopic"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -19,12 +21,18 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#about">About Us</a>
       </li>
         <li class="nav-item">
+        <a class="nav-link" href="#features" tabindex="-1" aria-disabled="true">Featured Cars</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#testimony" tabindex="-1" aria-disabled="true">Testimony</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true">Contact</a>
       </li>
       <li class="nav-item dropdown">
@@ -45,14 +53,13 @@
         </div>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
 </nav>
 
 
+
+  <br><br>
+  <div class="vl col-md-6 off-set-6"></div><br>
 
 
 <section class="container">
@@ -64,7 +71,17 @@
 		<div class="col-md-6">
 			<h6>Make:</h6>
 		<select class="form-control">
-  		<option>--All--</option>
+  	  <option>--All--</option>
+      <option>Aston Martin</option>
+      <option>Bentley</option>
+      <option>BMW</option>
+      <option>Bugatti</option>
+      <option>Ferrari</option>
+      <option>Lamborghini</option>
+      <option>Maserati</option>
+      <option>Mercedes</option>
+      <option>Mustang</option>
+      <option>Porsche</option>
 		</select>
 		</div>
 		<div class="col-md-6">
@@ -78,26 +95,27 @@
 			
 			<div class="row mb-3">
 				<div class="col-md-6">
-				<label for="formControlRange">First Registration</label>
-	    		<input type="range" class="form-control-range" id="formControlRange">
+				<label for="formControlRange">First Registration: <p><span>Year:</span><span id="demo"></span></p></label>
+	    		<input type="range" min="2000" max="2020" class="custom-range" id="customRange">
 				</div>
 				<div class="col-md-6">
-				<label for="formControlRange">Mileage:</label>
-	    		<input type="range" class="form-control-range" id="formControlRange">
+				<label for="formControlRange">Mileage:<p><span id="demo1"></span><span>km</span></p></label>
+				<input type="range" min="0" max="20000" class="custom-range" id="customRange1">
 				</div>
-
 			</div>
 
 			<div class="row mb-3">
 				<div class="col-md-6">
-				<label for="formControlRange">Engine Size:</label>
-	    		<input type="range" class="form-control-range" id="formControlRange">
+				<label for="formControlRange">Engine:<p><span id="demo2"></span><span>cc</span></p></label>
+				<input type="range" min="1000" max="5400" class="custom-range" id="customRange2">
 				</div>
 				<div class="col-md-6">
-				<label for="formControlRange">Power:</label>
-	    		<input type="range" class="form-control-range" id="formControlRange">
+				<label for="formControlRange">Power:<p><span id="demo3"></span><span>hp</span></p></label>
+				<input type="range" min="100" max="500" class="custom-range" id="customRange3">
 				</div>
 			</div>
+			 
+
 
 			<div class="row mb-3">
 				<div class="col-md-6">
@@ -109,6 +127,7 @@
 	    		<input type="email" class="form-control" id="exampleInputGearbox" aria-describedby="gearboxHelp" placeholder="Enter Gearbox">
 				</div>
 			</div>
+
 			
 			 <div class="form-group">
    			 <label for="exampleFormControlTextarea1">Other Details:</label>
@@ -149,16 +168,59 @@
 	</div>
 	<button type="button" class="btn btn-primary btn-lg btn-block my-3">Request</button>
 </form>
-
-
-
-
 </section>
 	
 
 
 
-
+<footer class="foot">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+       <a class="nav-link" href="#" class=""><p class="text-white">Home</p></a>
+        <a class="nav-link" href="#about"><p class="text-white">About Us</p></a>
+        <a class="nav-link" href="#features" tabindex="-1" aria-disabled="true"><p class="text-white">Featured Cars</p></a>
+        <a class="nav-link" href="#testimony" tabindex="-1" aria-disabled="true"><p class="text-white">Testimony</p></a>
+        <a class="nav-link" href="#contact" tabindex="-1" aria-disabled="true"><p class="text-white">Contact</p></a>
+    </div>
+  <hr class="mb-4 mt-0">
+  <div class="row justify-content-center">
+    <div class="mr-3">
+      <div class="d-flex justify-content-center ">
+        <i class="fab fa-facebook text-white fa-2x"></i>
+      </div>
+      <small class="text-white">Facebook</small>
+    </div>
+     <div class="mr-3">
+      <div class="d-flex justify-content-center ">
+        <i class="fab fa-instagram text-white fa-2x"></i>
+      </div>
+      <small class="text-white">Instagram</small>
+    </div>
+     <div class="mr-3">
+      <div class="d-flex justify-content-center ">
+        <i class="fab fa-twitter-square text-white fa-2x"></i>
+      </div>
+      <small class="text-white">Twitter</small>
+    </div>
+    <div class="mr-3">
+      <div class="d-flex justify-content-center ">
+        <i class="fab fa-youtube text-white fa-2x"></i>
+      </div>
+      <small class="text-white">YouTube</small>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-3 text-white">
+    <div class="mr-5">
+    <i class="fas fa-envelope"></i><small>info@autohaste.com</small>
+    </div>
+    <div>
+    <i class="fas fa-phone"></i><small>(777) 888-9999</small>
+    </div>
+  </div>
+  <hr>
+  <small class="text-white d-flex justify-content-center">&copy; 2019 Ged Anthony Gonzales. All Rights Reserved | Capstone1 by Ged &#9996;</small>
+  </div>
+</footer>
 
 
 
@@ -174,5 +236,6 @@
   <script>
   AOS.init();
 </script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
